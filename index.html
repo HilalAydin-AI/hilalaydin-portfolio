@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hilal Aydın Portfolio</title>
+    <link rel="stylesheet" href="profilCSS/profilimCSS.css">
+
+    <link type="image/png" rel="icon" href="img/icons.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+        <!-- Fallback: Web Audio API ile generated ambient music -->
+    </audio>
+
+    <!-- Music Control -->
+    <div class="music-control" id="musicControl">
+        <i class="fas fa-music" id="musicIcon"></i>
+    </div>
+
+    <!-- Enhanced Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    </div>
+
+    <!-- Fixed Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">HILAL AYDIN</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link">Hakkımda</a></li>
+                <li><a href="#education" class="nav-link">Eğitim</a></li>
+                <li><a href="#skills" class="nav-link">Yetenekler</a></li>
+                <li><a href="#projects" class="nav-link">Projeler</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h4>Merhaba, Ben</h4>
+                <h1>Hilal <span class="highlight">Aydın</span></h1>
+                <h3>Yazılım Geliştirici & <span class="highlight">Bilgisayar Mühendisi</span></h3>
+                <div class="cta-buttons">
+                    <!--  <a href="#" class="cta-button">CV İndir <i class="fas fa-download"></i></a>--> 
+                    <a href="#projects" class="cta-button secondary">Projelerimi Gör <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+
+                <div class="profile-avatar">
+                    <div class="avatar-ring"></div>
+                    <img src="img/Benim.png" alt="Hilal Aydın" class="avatar-img">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="glass-container">
+            <div class="section-title">
+                <h2>Hakkımda <span class="highlight">Bilgilerim</span></h2>
+                <p>Yazılım geliştirme alanında deneyimli bir bilgisayar mühendisiyim</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-illustration">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>Profesyonel Deneyimim</h3>
+                    <p>Bilgisayar Mühendisliği lisans eğitimi İstanbul Gedik Üniversitesi’nde tamamlandı. Lisans süreci
+                        boyunca yalnızca akademik bilgi değil, aynı zamanda uygulamaya dayalı yazılım geliştirme
+                        becerileri de kazanıldı. Bu süreçte, farklı sektörlerden kurumlarla iş birliği yapılarak,
+                        çeşitli ihtiyaçlara yönelik özel yazılım çözümleri geliştirildi.</p>
+                    <p>Yapay zeka, görüntü işleme ve veri analitiği gibi alanlarda Ar-Ge projeleri yürütüldü. Backend
+                        mimarileri başta olmak üzere tam yığın yazılım geliştirme süreçlerinde aktif roller üstlenildi.
+                        RESTful API tasarımı, veri tabanı modelleme ve servis entegrasyonları gibi konularda pratik
+                        deneyim elde edildi.</p>
+                    <p>Node.js, Python, JavaScript ve MySQL gibi teknolojiler kullanılarak kurumsal ölçekli projeler
+                        geliştirildi. Eğitim platformları (LMS), yönetim sistemleri (PMS), görüntü işleme çözümleri ve
+                        akıllı otomasyon sistemleri bu projeler arasında yer aldı.</p>
+                    <p>Çalışmalar süresince sadece teknik beceriler değil; aynı zamanda proje yönetimi, zaman
+                        planlaması, iş takibi ve dokümantasyon gibi yazılım geliştirme süreçlerinin tüm yönleriyle
+                        tecrübe edilmesi sağlandı. Takım çalışmasına uyum, hızlı adaptasyon ve analitik düşünme
+                        yetenekleriyle farklı ekip yapılarında etkili katkılar sunuldu.</p>
+                    <p>Ayrıca, kullanıcı deneyimi (UX), kod temizliği (clean code), sürdürülebilirlik ve
+                        ölçeklenebilirlik gibi yazılım mühendisliğinin temel ilkeleri de geliştirilen projelerde ön
+                        planda tutuldu. Yeni teknolojilere karşı duyulan ilgi ve sürekli öğrenme motivasyonuyla, gelişen
+                        teknoloji trendleri yakından takip edilmekte ve projelere entegre edilmektedir.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i><span class="label">Telefon:</span> +90 536 051 41 65</p>
+                        <p><i class="fas fa-envelope"></i><span class="label">E-posta:</span> hiilaallaydin.14@gmail.com
+                        </p>
+                        <p><i class="fas fa-map-marker-alt"></i><span class="label">Konum:</span> Kocaeli, Türkiye</p>
+                        <p><i class="fas fa-language"></i><span class="label">Diller:</span> Türkçe (Ana dil), İngilizce
+                            (B1)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="glass-container">
+            <div class="section-title">
+                <h2>Eğitim & <span class="highlight">Deneyim</span></h2>
+                <p>Akademik eğitimim ve profesyonel deneyimlerim</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>İstanbul Gedik Üniversitesi</h4>
+                    <p>Yazılım geliştirme, algoritma analizi, veri yapıları ve yapay zekâ alanlarında teorik ve
+                        uygulamalı dersler alındı. Proje tabanlı çalışmalarla mühendislik bakış açısı, problem çözme ve
+                        teknik analiz yetenekleri geliştirildi.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4>Arvis Teknoloji A.Ş.</h4>
+                    <p>Node.js, JavaScript ve MySQL kullanılarak kurumsal düzeyde LMS (Learning Management System) ve
+                        PMS (Project Management System) projeleri geliştirildi. Backend mimarisi, veritabanı tasarımı ve
+                        kullanıcı odaklı sistem optimizasyonu konularında deneyim kazanıldı.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h4>Ceva Lojistik</h4>
+                    <p>Depo otomasyonu kapsamında Zebra cihazlarının kurulumu, kablosuz ağ altyapısının yapılandırılması
+                        ve AREF sistemleri üzerinde teknik destek sağlandı. IT altyapısı ve donanım entegrasyonu
+                        süreçlerinde uygulamalı deneyim elde edildi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Skills Section -->
+<section class="section" id="skills">
+    <div class="glass-container">
+        <div class="section-title">
+            <h2>Teknik <span class="highlight">Yeteneklerim</span></h2>
+            <p>Kullandığım teknolojiler ve programlama dilleri</p>
+        </div>
+        <div class="skills-grid">
+            <!-- Programlama Dilleri -->
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <div class="skill-name">Java</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="skill-name">Python</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <div class="skill-name">JavaScript</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="skill-name">C++</div>
+            </div>
+            
+            <!-- Web Teknolojileri -->
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <div class="skill-name">Node.js</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="skill-name">HTML5</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill-name">CSS3</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fab fa-bootstrap"></i>
+                </div>
+                <div class="skill-name">Bootstrap</div>
+            </div>
+            
+            <!-- Mobil Geliştirme -->
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="skill-name">Flutter</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fas fa-code-branch"></i>
+                </div>
+                <div class="skill-name">Dart</div>
+            </div>
+            
+            <!-- Veritabanı -->
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="skill-name">MySQL</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="skill-name">SQLite</div>
+            </div>
+            
+            <!-- AI/ML Teknolojileri -->
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="skill-name">AI/ML</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="skill-name">OpenCV</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="skill-name">YOLO</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="skill-name">Gemini AI</div>
+            </div>
+            
+            <!-- Gerçek Zamanlı Teknolojiler -->
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="skill-name">Socket.io</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <div class="skill-name">Jitsi Meet</div>
+            </div>
+            
+            <!-- Araçlar -->
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fab fa-git-alt"></i>
+                </div>
+                <div class="skill-name">Git</div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <div class="skill-name">GitHub</div>
+            </div>
+            
+     
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Overview Section -->
+    <section class="section" id="projects">
+        <div class="glass-container">
+            <div class="section-title">
+                <h2>Öne Çıkan <span class="highlight">Projelerim</span></h2>
+                <p>Geliştirdiğim en önemli projelerinin kısa özeti</p>
+            </div>
+
+            <div class="projects-overview">
+                <!-- Kitap E-Ticaret Sistemi -->
+                <div class="project-preview-card" onclick="goToProjectDetails('bookshop')">
+                    <div class="project-preview-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4>Kitap Yönetim & E-Ticaret Sistemi</h4>
+                    <p>C++ ve Node.js hibrit mimarisi ile geliştirilmiş modern kitap satış platformu. MySQL X DevAPI
+                        entegrasyonu ve güvenli dosya yükleme sistemi içeren kapsamlı e-ticaret çözümü.</p>
+                    <div class="project-tech-preview">
+                        <span class="tech-tag-preview">C++</span>
+                        <span class="tech-tag-preview">Node.js</span>
+                        <span class="tech-tag-preview">MySQL</span>
+                        <span class="tech-tag-preview">JavaScript</span>
+                    </div>
+                    <button class="view-project-btn">Detaylı İncele</button>
+                </div>
+
+                <!-- LMS Sistemi -->
+                <div class="project-preview-card" onclick="goToProjectDetails('lms')">
+                    <div class="project-preview-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>Uzaktan Eğitim Sistemi (LMS)</h4>
+                    <p>ArVis Teknoloji için geliştirilen kapsamlı eğitim platformu. Üç farklı panel sistemi
+                        (Admin/Öğrenci/Öğretmen) ve OpenCV yüz tanıma entegrasyonu ile gelişmiş özellikler.</p>
+                    <div class="project-tech-preview">
+                        <span class="tech-tag-preview">Node.js</span>
+                        <span class="tech-tag-preview">MySQL</span>
+                        <span class="tech-tag-preview">OpenCV</span>
+                        <span class="tech-tag-preview">Socket.io</span>
+                    </div>
+                    <button class="view-project-btn">Detaylı İncele</button>
+                </div>
+
+                <!-- Rocket Akademi Yönetim -->
+                <div class="project-preview-card" onclick="goToProjectDetails('management')">
+                    <div class="project-preview-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h4>Rocket Akademi Yönetim Sistemi</h4>
+                    <p>Kapsamlı şirket yönetim platformu. Gemini AI chatbot, Socket.io chat sistemi, Jitsi Meet
+                        entegrasyonu ve CV oluşturma modülü ile tam entegre çözüm.</p>
+                    <div class="project-tech-preview">
+                        <span class="tech-tag-preview">Node.js</span>
+                        <span class="tech-tag-preview">Gemini AI</span>
+                        <span class="tech-tag-preview">Socket.io</span>
+                        <span class="tech-tag-preview">Jitsi Meet</span>
+                    </div>
+                    <button class="view-project-btn">Detaylı İncele</button>
+                </div>
+
+                <!-- Plaka Tanıma Sistemi -->
+                <div class="project-preview-card" onclick="goToProjectDetails('plaka')">
+                    <div class="project-preview-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h4>Akıllı Plaka Tanıma Sistemi</h4>
+                    <p>Python YOLOv5 ve Node.js entegrasyonu ile gerçek zamanlı araç plaka tanıma. %95+ doğruluk oranı
+                        ile otopark yönetimi ve güvenlik sistemleri için ideal çözüm.</p>
+                    <div class="project-tech-preview">
+                        <span class="tech-tag-preview">Python</span>
+                        <span class="tech-tag-preview">YOLOv5</span>
+                        <span class="tech-tag-preview">OpenCV</span>
+                        <span class="tech-tag-preview">Node.js</span>
+                    </div>
+                    <button class="view-project-btn">Detaylı İncele</button>
+                </div>
+
+                <!-- Flutter Yemek Tarifleri -->
+                <div class="project-preview-card" onclick="goToProjectDetails('food-flutter')">
+                    <div class="project-preview-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h4>Hilal Mutfağı - Yemek Tarifleri</h4>
+                    <p>Flutter ile geliştirilmiş mobil yemek tarifleri uygulaması. Kategorize tarifler, not alma sistemi
+                        ve offline çalışma desteği ile zengin mutfak deneyimi.</p>
+                    <div class="project-tech-preview">
+                        <span class="tech-tag-preview">Flutter</span>
+                        <span class="tech-tag-preview">Dart</span>
+                        <span class="tech-tag-preview">SQLite</span>
+                        <span class="tech-tag-preview">Material Design</span>
+                    </div>
+                    <button class="view-project-btn">Detaylı İncele</button>
+                </div>
+
+                <!-- TEKNOFEST Projesi -->
+                <div class="project-preview-card" onclick="goToProjectDetails('teknofest')">
+                    <div class="project-preview-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h4>TEKNOFEST Ulaşımda Yapay Zeka</h4>
+                    <p>Drone görüntülerinde nesne tespiti ve pozisyon kestirimi. YOLOv9 ve Visual SLAM algoritmaları ile
+                        UAP/UAİ alan tanıma sistemi geliştiren yarışma projesi.</p>
+                    <div class="project-tech-preview">
+                        <span class="tech-tag-preview">Python</span>
+                        <span class="tech-tag-preview">YOLOv9</span>
+                        <span class="tech-tag-preview">Visual SLAM</span>
+                        <span class="tech-tag-preview">Deep Learning</span>
+                    </div>
+                    <button class="view-project-btn">Detaylı İncele</button>
+                </div>
+            </div>
+
+            <!-- CTA to detailed projects page -->
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="projects.html" class="cta-button" style="font-size: 1.1rem; padding: 18px 36px;">
+                    <i class="fas fa-arrow-right" style="margin-right: 10px;"></i>
+                    Tüm Projeleri Detaylı İncele
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer Section -->
+    <section class="footer" id="contact">
+        <h3>Benimle <span class="highlight">İletişime</span> Geçin</h3>
+        <div class="social-links">
+            <a href="mailto:hiilaallaydin.14@gmail.com" class="social-link" target="_blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/hilal-ayd%C4%B1n-ab4044264/" class="social-link" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="tel:+905360514165" class="social-link" target="_blank">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+        <p class="copyright">© 2025 Hilal Aydın. Tüm haklar saklıdır.</p>
+    </section>
+
+    <script>
+        // Background Music Management
+        let isPlaying = false;
+        let audioContext;
+
+        // Create ambient music using Web Audio API
+        function createAmbientMusic() {
+            if (!audioContext) {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+                function playTone(frequency, duration, delay = 0) {
+                    setTimeout(() => {
+                        const osc = audioContext.createOscillator();
+                        const gain = audioContext.createGain();
+
+                        osc.connect(gain);
+                        gain.connect(audioContext.destination);
+
+                        osc.frequency.setValueAtTime(frequency, audioContext.currentTime);
+                        osc.type = 'sine';
+
+                        gain.gain.setValueAtTime(0, audioContext.currentTime);
+                        gain.gain.linearRampToValueAtTime(0.1, audioContext.currentTime + 0.1);
+                        gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + duration);
+
+                        osc.start(audioContext.currentTime);
+                        osc.stop(audioContext.currentTime + duration);
+                    }, delay);
+                }
+
+                function playAmbientLoop() {
+                    if (isPlaying) {
+                        playTone(261.63, 4, 0);    // C
+                        playTone(329.63, 4, 0);    // E
+                        playTone(392.00, 4, 0);    // G
+
+                        playTone(293.66, 4, 4000); // D
+                        playTone(369.99, 4, 4000); // F#
+                        playTone(440.00, 4, 4000); // A
+
+                        playTone(246.94, 4, 8000); // B
+                        playTone(311.13, 4, 8000); // Eb
+                        playTone(415.30, 4, 8000); // Ab
+
+                        setTimeout(playAmbientLoop, 12000);
+                    }
+                }
+
+                playAmbientLoop();
+            }
+        }
+
+        // Music control functionality
+        const musicControl = document.getElementById('musicControl');
+        const musicIcon = document.getElementById('musicIcon');
+
+        musicControl.addEventListener('click', () => {
+            if (!isPlaying) {
+                isPlaying = true;
+                musicIcon.className = 'fas fa-volume-up';
+                createAmbientMusic();
+                musicControl.title = 'Müziği Durdur';
+            } else {
+                isPlaying = false;
+                musicIcon.className = 'fas fa-music';
+                if (audioContext) {
+                    audioContext.close();
+                    audioContext = null;
+                }
+                musicControl.title = 'Müziği Başlat';
+            }
+        });
+
+        musicControl.title = 'Müziği Başlat';
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Enhanced navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = navToggle.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.replace('fa-bars', 'fa-times');
+            } else {
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.querySelector('i').classList.replace('fa-times', 'fa-bars');
+            });
+        });
+
+        // Enhanced active navigation highlight
+        const sections = document.querySelectorAll('.section, .hero');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Intersection Observer for section animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Navigate to project details page
+        function goToProjectDetails(projectId) {
+            window.location.href = `projects.html#${projectId}`;
+        }
+
+        // Enhanced hover effects
+        document.querySelectorAll('.card, .project-preview-card, .skill-item').forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-15px) scale(1.02)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Parallax effect for floating shapes
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const shapes = document.querySelectorAll('.shape');
+
+            shapes.forEach((shape, index) => {
+                const speed = (index + 1) * 0.3;
+                shape.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+
+        // Typing effect for hero title
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                } else {
+                    element.classList.add('typing-animation');
+                }
+            }
+            type();
+        }
+
+        // Initialize typing effect when page loads
+        window.addEventListener('load', () => {
+            const titleElement = document.querySelector('.hero-content h3');
+            if (titleElement) {
+                const originalText = titleElement.textContent;
+                setTimeout(() => {
+                    typeWriter(titleElement, originalText, 80);
+                }, 1500);
+            }
+        });
+
+        // Fade in animation for elements
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        fadeElements.forEach(element => {
+            fadeObserver.observe(element);
+        });
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+
+</html>

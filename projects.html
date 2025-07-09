@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerim - Hilal Aydın</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="profilCSS/projectsCSS.css">
+</head>
+<body>
+    <!-- Enhanced Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" onclick="goToHome()" class="logo">HILAL AYDIN</a>
+            <div class="nav-links">
+                <a href="#" onclick="goToHome()" class="nav-link">Ana Sayfa</a>
+                <a href="#" onclick="goToHome('#about')" class="nav-link">Hakkımda</a>
+                <a href="#" onclick="goToHome('#skills')" class="nav-link">Yetenekler</a>
+                <a href="#" class="nav-link">Projeler</a>
+                <a href="#" onclick="goToHome('#contact')" class="nav-link">İletişim</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Projects Page -->
+    <div id="projects-main" class="projects-main">
+        <!-- Back Button Section -->
+        <section class="back-section">
+            <a href="#" onclick="goToHome()" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Ana Sayfaya Dön
+            </a>
+        </section>
+
+        <!-- Header -->
+        <header class="header">
+            <h1>Geliştirdiğim Projeler</h1>
+            <p>Modern teknolojiler ve yenilikçi yaklaşımlarla hayata geçirdiğim kapsamlı yazılım projeleri</p>
+        </header>
+
+        <!-- Projects Grid -->
+        <section class="projects-section">
+            <div class="projects-grid">
+                <!-- Kitap E-Ticaret Projesi -->
+                <div class="project-card loading" onclick="openProjectDetail('bookshop')">
+                    <div class="project-image">
+                        <div class="project-gradient">
+                            <i class="fas fa-book"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Kitap Yönetim & E-Ticaret Sistemi</h3>
+                        <p class="project-description">C++ ve Node.js hibrit mimarisi ile geliştirilmiş modern kitap satış platformu. MySQL X DevAPI entegrasyonu ve güvenli dosya yükleme sistemi içeren kapsamlı e-ticaret çözümü.</p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag node">Node.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <button class="project-button">
+                            <i class="fas fa-eye"></i> Detaylı İncele
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Flutter Yemek Tarifleri -->
+                <div class="project-card loading" onclick="openProjectDetail('food-flutter')">
+                    <div class="project-image">
+                        <div class="project-gradient">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Hilal Mutfağı - Yemek Tarifleri</h3>
+                        <p class="project-description">Flutter ile geliştirilmiş mobil yemek tarifleri uygulaması. Kategorize tarifler, not alma sistemi ve offline çalışma desteği ile zengin mutfak deneyimi.</p>
+                        <div class="project-technologies">
+                            <span class="tech-tag flutter">Flutter</span>
+                            <span class="tech-tag flutter">Dart</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Material Design</span>
+                        </div>
+                        <button class="project-button">
+                            <i class="fas fa-eye"></i> Detaylı İncele
+                        </button>
+                    </div>
+                </div>
+
+                <!-- LMS Sistemi -->
+                <div class="project-card loading" onclick="openProjectDetail('lms')">
+                    <div class="project-image">
+                        <div class="project-gradient">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Uzaktan Eğitim Sistemi (LMS)</h3>
+                        <p class="project-description">ArVis Teknoloji için geliştirilen kapsamlı eğitim platformu. Üç farklı panel sistemi (Admin/Öğrenci/Öğretmen) ve OpenCV yüz tanıma entegrasyonu ile gelişmiş özellikler.</p>
+                        <div class="project-technologies">
+                            <span class="tech-tag node">Node.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag python">OpenCV</span>
+                            <span class="tech-tag">Socket.io</span>
+                        </div>
+                        <button class="project-button">
+                            <i class="fas fa-eye"></i> Detaylı İncele
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Rocket Akademi Yönetim -->
+                <div class="project-card loading" onclick="openProjectDetail('management')">
+                    <div class="project-image">
+                        <div class="project-gradient">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Rocket Akademi Yönetim Sistemi</h3>
+                        <p class="project-description">Kapsamlı şirket yönetim platformu. Gemini AI chatbot, Socket.io chat sistemi, Jitsi Meet entegrasyonu ve CV oluşturma modülü ile tam entegre çözüm.</p>
+                        <div class="project-technologies">
+                            <span class="tech-tag node">Node.js</span>
+                            <span class="tech-tag ai">Gemini AI</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Jitsi Meet</span>
+                        </div>
+                        <button class="project-button">
+                            <i class="fas fa-eye"></i> Detaylı İncele
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Plaka Tanıma Sistemi -->
+                <div class="project-card loading" onclick="openProjectDetail('plaka')">
+                    <div class="project-image">
+                        <div class="project-gradient">
+                            <i class="fas fa-car"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Akıllı Plaka Tanıma Sistemi</h3>
+                        <p class="project-description">Python YOLOv5 ve Node.js entegrasyonu ile gerçek zamanlı araç plaka tanıma. %95+ doğruluk oranı ile otopark yönetimi ve güvenlik sistemleri için ideal çözüm.</p>
+                        <div class="project-technologies">
+                            <span class="tech-tag python">Python</span>
+                            <span class="tech-tag ai">YOLOv5</span>
+                            <span class="tech-tag python">OpenCV</span>
+                            <span class="tech-tag node">Node.js</span>
+                        </div>
+                        <button class="project-button">
+                            <i class="fas fa-eye"></i> Detaylı İncele
+                        </button>
+                    </div>
+                </div>
+
+                <!-- TEKNOFEST Projesi -->
+                <div class="project-card loading" onclick="openProjectDetail('teknofest')">
+                    <div class="project-image">
+                        <div class="project-gradient">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">TEKNOFEST Ulaşımda Yapay Zeka</h3>
+                        <p class="project-description">Drone görüntülerinde nesne tespiti ve pozisyon kestirimi. YOLOv9 ve Visual SLAM algoritmaları ile UAP/UAİ alan tanıma sistemi geliştiren yarışma projesi.</p>
+                        <div class="project-technologies">
+                            <span class="tech-tag python">Python</span>
+                            <span class="tech-tag ai">YOLOv9</span>
+                            <span class="tech-tag ai">Visual SLAM</span>
+                            <span class="tech-tag ai">Deep Learning</span>
+                        </div>
+                        <button class="project-button">
+                            <i class="fas fa-eye"></i> Detaylı İncele
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Project Detail Views -->
+    <!-- Kitap Yönetim Sistemi Detail -->
+    <div id="bookshop-detail" class="project-detail">
+        <div class="detail-nav">
+            <div class="detail-nav-container">
+                <a href="#" onclick="closeProjectDetail()" class="detail-back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Projelere Dön
+                </a>
+                <div class="detail-title-nav">Kitap Yönetim Sistemi</div>
+            </div>
+        </div>
+        
+        <div class="detail-header">
+            <div class="detail-content">
+                <h1 class="detail-title">Kitap Yönetim & E-Ticaret Sistemi</h1>
+                <p class="detail-subtitle">C++ ve Node.js Hibrit Mimarisi ile Modern E-Ticaret Platformu</p>
+                <div class="detail-tech-tags">
+                    <span class="detail-tech-tag">C++</span>
+                    <span class="detail-tech-tag">Node.js</span>
+                    <span class="detail-tech-tag">MySQL X DevAPI</span>
+                    <span class="detail-tech-tag">Express.js</span>
+                    <span class="detail-tech-tag">JavaScript</span>
+                    <span class="detail-tech-tag">Bootstrap</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-body">
+            <div class="detail-body-container">
+                <div class="images-section">
+                    <h2 class="section-title">Proje Görselleri</h2>
+                    <div class="images-grid">
+                        <div class="image-card" onclick="openImageModal('projectimages/bookshop/Anasayfa.jpg')">
+                            <img src="projectimages/bookshop/Anasayfa.jpg" alt="Ana Sayfa">
+                            <div class="image-caption">
+                                <h4>Ana Sayfa Tasarımı</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/bookshop/Giriş-Sayfası.jpg')">
+                            <img src="projectimages/bookshop/Giriş-Sayfası.jpg" alt="Giriş Sayfası">
+                            <div class="image-caption">
+                                <h4>Kullanıcı Giriş Sistemi</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/bookshop/Yeni-Kayıt-Sayfası.jpg')">
+                            <img src="projectimages/bookshop/Yeni-Kayıt-Sayfası.jpg" alt="Kayıt Sayfası">
+                            <div class="image-caption">
+                                <h4>Yeni Üye Kayıt Formu</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('/projectimages/bookshop/Kitaplarım-Listsi-Sayfası.jpg')">
+                            <img src="/projectimages/bookshop/Kitaplarım-Listsi-Sayfası.jpg" alt="Kitap Listesi">
+                            <div class="image-caption">
+                                <h4>Kitap Yönetim Paneli</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/bookshop/Yeni-Kitap-Sayfası.jpg')">
+                            <img src="projectimages/bookshop/Yeni-Kitap-Sayfası.jpg" alt="Yeni Kitap">
+                            <div class="image-caption">
+                                <h4>Kitap Ekleme Sistemi</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/bookshop/Profile-Güncelleme-Sayfası.jpg')">
+                            <img src="projectimages/bookshop/Profile-Güncelleme-Sayfası.jpg" alt="Profil Güncelleme">
+                            <div class="image-caption">
+                                <h4>Profil Yönetimi</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features-section">
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-cogs"></i></div>Sistem Özellikleri</h3>
+                        <ul class="feature-list">
+                            <li><strong>Hibrit Mimari:</strong> C++ backend ile Node.js frontend entegrasyonu</li>
+                            <li><strong>MySQL X DevAPI:</strong> Modern veritabanı bağlantı protokolü</li>
+                            <li><strong>Güvenli Kimlik Doğrulama:</strong> Session tabanlı kullanıcı yönetimi</li>
+                            <li><strong>Dosya Yükleme:</strong> Multer ile kitap kapak görselleri</li>
+                            <li><strong>JSON İşleme:</strong> jsoncpp kütüphanesi ile veri transferi</li>
+                            <li><strong>Responsive Tasarım:</strong> Bootstrap ile mobil uyumlu arayüz</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-database"></i></div>Veritabanı Yapısı</h3>
+                        <ul class="feature-list">
+                            <li><strong>Kullanıcı Tablosu:</strong> Üye bilgileri ve yetkilendirme</li>
+                            <li><strong>Kitap Tablosu:</strong> Detaylı kitap bilgileri ve kategoriler</li>
+                            <li><strong>Değerlendirme Sistemi:</strong> Puanlama ve yorum tabloları</li>
+                            <li><strong>Session Yönetimi:</strong> Güvenli oturum kontrolü</li>
+                            <li><strong>İndeksleme:</strong> Hızlı arama için optimize edilmiş sorgu</li>
+                            <li><strong>İlişkisel Yapı:</strong> Foreign key ile veri bütünlüğü</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-code"></i></div>Teknik Detaylar</h3>
+                        <ul class="feature-list">
+                            <li><strong>C++ Executable:</strong> child_process ile Node.js entegrasyonu</li>
+                            <li><strong>API Endpoints:</strong> RESTful servis mimarisi</li>
+                            <li><strong>Error Handling:</strong> Kapsamlı hata yönetimi</li>
+                            <li><strong>Validation:</strong> Form doğrulama ve güvenlik kontrolleri</li>
+                            <li><strong>AJAX İstekleri:</strong> Asenkron veri işleme</li>
+                            <li><strong>Template Engine:</strong> EJS ile dinamik sayfa oluşturma</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-shield-alt"></i></div>Güvenlik Özellikleri</h3>
+                        <ul class="feature-list">
+                            <li><strong>Input Sanitization:</strong> SQL injection koruması</li>
+                            <li><strong>Session Security:</strong> Güvenli oturum yönetimi</li>
+                            <li><strong>File Upload Security:</strong> Dosya türü doğrulama</li>
+                            <li><strong>Password Hashing:</strong> Şifre şifreleme algoritması</li>
+                            <li><strong>CSRF Protection:</strong> Cross-site request forgery koruması</li>
+                            <li><strong>Rate Limiting:</strong> API isteklerinde sınırlama</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flutter Yemek Tarifleri Detail -->
+    <div id="food-flutter-detail" class="project-detail">
+        <div class="detail-nav">
+            <div class="detail-nav-container">
+                <a href="#" onclick="closeProjectDetail()" class="detail-back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Projelere Dön
+                </a>
+                <div class="detail-title-nav">Hilal Mutfağı</div>
+            </div>
+        </div>
+        
+        <div class="detail-header">
+            <div class="detail-content">
+                <h1 class="detail-title">Hilal Mutfağı - Yemek Tarifleri</h1>
+                <p class="detail-subtitle">Flutter ile Geliştirilmiş Mobil Yemek Tarifleri Uygulaması</p>
+                <div class="detail-tech-tags">
+                    <span class="detail-tech-tag">Flutter</span>
+                    <span class="detail-tech-tag">Dart</span>
+                    <span class="detail-tech-tag">SQLite</span>
+                    <span class="detail-tech-tag">Material Design</span>
+                    <span class="detail-tech-tag">Cross Platform</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-body">
+            <div class="detail-body-container">
+                <div class="images-section">
+                    <h2 class="section-title">Uygulama Ekranları</h2>
+                    <div class="images-grid">
+                        <div class="image-card" onclick="openImageModal('projectimages/food-flutter/Anasayfa.png')">
+                            <img src="projectimages/food-flutter/Anasayfa.png" alt="Ana Sayfa">
+                            <div class="image-caption">
+                                <h4>Hoşgeldin Ekranı</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/food-flutter/Giriş-Sayfası.png')">
+                            <img src="projectimages/food-flutter/Giriş-Sayfası.png" alt="Giriş Sayfası">
+                            <div class="image-caption">
+                                <h4>Kullanıcı Girişi</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/food-flutter/Yemek-Kategorileri.png')">
+                            <img src="projectimages/food-flutter/Yemek-Kategorileri.png" alt="Kategoriler">
+                            <div class="image-caption">
+                                <h4>Yemek Kategorileri</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/food-flutter/Çorba-Tarifleri.png')">
+                            <img src="projectimages/food-flutter/Çorba-Tarifleri.png" alt="Çorba Tarifleri">
+                            <div class="image-caption">
+                                <h4>Çorba Tarifleri Listesi</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/food-flutter/Domatesli-Çorbası-Tarifi.png')">
+                            <img src="projectimages/food-flutter/Domatesli-Çorbası-Tarifi.png" alt="Tarif Detayı">
+                            <div class="image-caption">
+                                <h4>Tarif Detay Sayfası</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/food-flutter/Balık-Yemekleri.png')">
+                            <img src="projectimages/food-flutter/Balık-Yemekleri.png" alt="Balık Yemekleri">
+                            <div class="image-caption">
+                                <h4>Balık Yemekleri</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/food-flutter/Fırında-Levrek-Tarifi.png')">
+                            <img src="projectimages/food-flutter/Fırında-Levrek-Tarifi.png" alt="Levrek Tarifi">
+                            <div class="image-caption">
+                                <h4>Fırında Levrek Tarifi</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/food-flutter/Notlar-Sayfası.png')">
+                            <img src="projectimages/food-flutter/Notlar-Sayfası.png" alt="Notlar">
+                            <div class="image-caption">
+                                <h4>Kişisel Notlar</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/food-flutter/Yeni-Kullancı-Sayfası.png')">
+                            <img src="projectimages/food-flutter/Yeni-Kullancı-Sayfası.png" alt="Kayıt">
+                            <div class="image-caption">
+                                <h4>Yeni Kullanıcı Kaydı</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features-section">
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>Mobil Özellikler</h3>
+                        <ul class="feature-list">
+                            <li><strong>Cross Platform:</strong> Android ve iOS desteği</li>
+                            <li><strong>Material Design:</strong> Modern ve tutarlı arayüz tasarımı</li>
+                            <li><strong>Responsive Layout:</strong> Farklı ekran boyutlarına uyum</li>
+                            <li><strong>Smooth Animations:</strong> Akıcı geçiş efektleri</li>
+                            <li><strong>Touch Gestures:</strong> Kaydırma ve dokunma etkileşimleri</li>
+                            <li><strong>Native Performance:</strong> Yüksek performanslı çalışma</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-database"></i></div>Veri Yönetimi</h3>
+                        <ul class="feature-list">
+                            <li><strong>SQLite Database:</strong> Yerel veri saklama</li>
+                            <li><strong>Offline Support:</strong> İnternet bağlantısı olmadan çalışma</li>
+                            <li><strong>Data Persistence:</strong> Kalıcı veri saklama</li>
+                            <li><strong>CRUD Operations:</strong> Tam veri yönetimi</li>
+                            <li><strong>Search & Filter:</strong> Gelişmiş arama ve filtreleme</li>
+                            <li><strong>Backup System:</strong> Veri yedekleme desteği</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-utensils"></i></div>Uygulama İçeriği</h3>
+                        <ul class="feature-list">
+                            <li><strong>Kategori Sistemi:</strong> Çorba, ana yemek, balık kategorileri</li>
+                            <li><strong>Detaylı Tarifler:</strong> Malzemeler ve hazırlık adımları</li>
+                            <li><strong>Kişisel Notlar:</strong> Kullanıcı not alma sistemi</li>
+                            <li><strong>Favoriler:</strong> Beğenilen tarifleri kaydetme</li>
+                            <li><strong>Arama Motoru:</strong> Tarif ve malzeme bazlı arama</li>
+                            <li><strong>Özel Tarifler:</strong> Kullanıcı tarifleri ekleme</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-code"></i></div>Geliştirme Detayları</h3>
+                        <ul class="feature-list">
+                            <li><strong>Flutter Framework:</strong> Google'ın UI toolkit'i</li>
+                            <li><strong>Dart Language:</strong> Modern programlama dili</li>
+                            <li><strong>State Management:</strong> Provider pattern kullanımı</li>
+                            <li><strong>Navigation:</strong> Multi-screen navigation sistemi</li>
+                            <li><strong>Custom Widgets:</strong> Özel UI bileşenleri</li>
+                            <li><strong>Asset Management:</strong> Görsel ve veri varlık yönetimi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- LMS Sistemi Detail -->
+    <div id="lms-detail" class="project-detail">
+        <div class="detail-nav">
+            <div class="detail-nav-container">
+                <a href="#" onclick="closeProjectDetail()" class="detail-back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Projelere Dön
+                </a>
+                <div class="detail-title-nav">LMS Sistemi</div>
+            </div>
+        </div>
+        
+        <div class="detail-header">
+            <div class="detail-content">
+                <h1 class="detail-title">Uzaktan Eğitim Sistemi (LMS)</h1>
+<p class="detail-subtitle">ArVis Teknoloji için Takım Çalışması - Kapsamlı Kurumsal Eğitim Platformu</p>                <div class="detail-tech-tags">
+                    <span class="detail-tech-tag">Node.js</span>
+                    <span class="detail-tech-tag">MySQL</span>
+                    <span class="detail-tech-tag">Python</span>
+                    <span class="detail-tech-tag">OpenCV</span>
+                    <span class="detail-tech-tag">Socket.io</span>
+                    <span class="detail-tech-tag">Jitsi Meet</span>
+                    <span class="detail-tech-tag">EJS</span>
+                    <span class="detail-tech-tag">HBS</span>
+                    <span class="detail-tech-tag">Bootstrap</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-body">
+            <div class="detail-body-container">
+                <div class="images-section">
+                    <h2 class="section-title">Sistem Panelleri</h2>
+                    <div class="images-grid">
+                        <div class="image-card" onclick="openImageModal('projectimages/LMS/Admin-Panel-AnaSayfa.png')">
+                            <img src="projectimages/LMS/Admin-Panel-AnaSayfa.png" alt="Admin Panel">
+                            <div class="image-caption">
+                                <h4>Admin Panel Dashboard</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/LMS/Admin-Panel-Öğrenciler-Sayfası.png')">
+                            <img src="projectimages/LMS/Admin-Panel-Öğrenciler-Sayfası.png" alt="Öğrenci Yönetimi">
+                            <div class="image-caption">
+                                <h4>Öğrenci Yönetim Paneli</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/LMS/Admin-Panel-Öğretmenler-Sayfası.png')">
+                            <img src="projectimages/LMS/Admin-Panel-Öğretmenler-Sayfası.png" alt="Öğretmen Yönetimi">
+                            <div class="image-caption">
+                                <h4>Öğretmen Yönetim Paneli</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/LMS/Admin-Panel-Dersler-Sayfası.png')">
+                            <img src="projectimages/LMS/Admin-Panel-Dersler-Sayfası.png" alt="Ders Yönetimi">
+                            <div class="image-caption">
+                                <h4>Ders Yönetim Sistemi</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/LMS/Öğrenc-Panel-Anasayfası.png')">
+                            <img src="projectimages/LMS/Öğrenc-Panel-Anasayfası.png" alt="Öğrenci Panel">
+                            <div class="image-caption">
+                                <h4>Öğrenci Ana Sayfası</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/LMS/Öğrenc-Panel-DersProgramı-Sayfası.png')">
+                            <img src="projectimages/LMS/Öğrenc-Panel-DersProgramı-Sayfası.png" alt="Ders Programı">
+                            <div class="image-caption">
+                                <h4>Ders Programı Takibi</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/LMS/Öğrenc-Panel-Notlar-Sayfası.png')">
+                            <img src="projectimages/LMS/Öğrenc-Panel-Notlar-Sayfası.png" alt="Notlar">
+                            <div class="image-caption">
+                                <h4>Not Takip Sistemi</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/LMS/Öğretmen-Panel-Canlı-Ders-Sayfası.png')">
+                            <img src="projectimages/LMS/Öğretmen-Panel-Canlı-Ders-Sayfası.png" alt="Canlı Ders">
+                            <div class="image-caption">
+                                <h4>Canlı Ders Yönetimi</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="features-section">
+                <div class="feature-card">
+                    <h3><div class="feature-icon"><i class="fas fa-users-cog"></i></div>Admin Panel Özellikleri</h3>
+                    <ul class="feature-list">
+                        <li><strong>Merkezi Kullanıcı Yönetimi:</strong> Öğrenci, öğretmen ve admin hesaplarının toplu yönetimi</li>
+                        <li><strong>Dinamik Ders Programları:</strong> Ders programları ve sınıf atama sistemi</li>
+                        <li><strong>Detaylı Analiz ve Raporlama:</strong> Öğrenci başarı istatistikleri ve sistem kullanım raporları</li>
+                        <li><strong>Platform Konfigürasyon:</strong> Sistem ayarları ve özelleştirme seçenekleri</li>
+                        <li><strong>Rol Tabanlı Erişim Kontrolü:</strong> Gelişmiş yetkilendirme ve güvenlik ayarları</li>
+                        <li><strong>Otomatik Backup Sistemi:</strong> Sistem yedekleme ve geri yükleme</li>
+                        <li><strong>Toplu Bildirim Gönderme:</strong> Duyuru ve bildirim sistemi</li>
+                        <li><strong>Management Sistemi Entegrasyonu:</strong> Tek tıkla Rocket Akademi platformuna geçiş</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3><div class="feature-icon"><i class="fas fa-user-graduate"></i></div>Öğrenci Panel Özellikleri</h3>
+                    <ul class="feature-list">
+                        <li><strong>Kişisel Dashboard:</strong> Ders programı, notlar ve duyurular tek ekranda</li>
+                        <li><strong>Canlı Derslere Katılım:</strong> Video konferans ile interaktif ders deneyimi</li>
+                        <li><strong>Not Takip Sistemi:</strong> Dönem notları, quiz sonuçları ve ilerleme grafiği</li>
+                        <li><strong>Devamsızlık Kontrolü:</strong> Otomatik yoklama ve devamsızlık takibi</li>
+                        <li><strong>Ders Materyalleri:</strong> PDF, video ve interaktif içeriklere erişim</li>
+                        <li><strong>Ödev ve Proje Teslimi:</strong> Online dosya yükleme ve geri bildirim sistemi</li>
+                        <li><strong>Online Sınav Sistemi:</strong> Quiz ve sınav katılımı</li>
+                        <li><strong>Danışman İletişimi:</strong> Öğrenci danışmanı ile direkt mesajlaşma</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3><div class="feature-icon"><i class="fas fa-chalkboard-teacher"></i></div>Öğretmen Panel Özellikleri</h3>
+                    <ul class="feature-list">
+                        <li><strong>Ders İçeriği Yönetimi:</strong> Ders materyallerini organize etme ve paylaşma</li>
+                        <li><strong>Canlı Ders Yönetimi:</strong> Video konferans başlatma ve yönetme araçları</li>
+                        <li><strong>Not Verme Sistemi:</strong> Öğrenci değerlendirme ve not girişi</li>
+                        <li><strong>Devamsızlık İşlemleri:</strong> Yoklama alma ve devamsızlık girişi</li>
+                        <li><strong>Sınav Oluşturma:</strong> Online quiz ve sınav hazırlama araçları</li>
+                        <li><strong>Öğrenci Takibi:</strong> Bireysel öğrenci performans analizi</li>
+                        <li><strong>Ödev Değerlendirme:</strong> Teslim edilen ödevleri değerlendirme sistemi</li>
+                        <li><strong>Sınıf Yönetimi:</strong> Öğrenci grupları ve sınıf organizasyonu</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3><div class="feature-icon"><i class="fas fa-video"></i></div>Canlı Ders Sistemi</h3>
+                    <ul class="feature-list">
+                        <li><strong>Jitsi Meet Entegrasyonu:</strong> Yüksek kaliteli video konferans altyapısı</li>
+                        <li><strong>Ekran Paylaşımı:</strong> Öğretmen ve öğrenci ekran paylaşım özelliği</li>
+                        <li><strong>Interaktif Chat:</strong> Ders sırasında anlık mesajlaşma sistemi</li>
+                        <li><strong>Ders Kaydı:</strong> Canlı derslerin otomatik kayıt altına alınması</li>
+                        <li><strong>Otomatik Yoklama:</strong> Katılımcı tespiti ve devamsızlık işleme</li>
+                        <li><strong>Sanal Sınıf Yönetimi:</strong> Katılımcı kontrolü ve moderasyon araçları</li>
+                        <li><strong>Breakout Rooms:</strong> Grup çalışmaları için alt oda sistemi</li>
+                        <li><strong>Whiteboard Entegrasyonu:</strong> Sanal tahta ve çizim araçları</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3><div class="feature-icon"><i class="fas fa-eye"></i></div>Yüz Tanıma Sistemi</h3>
+                    <ul class="feature-list">
+                        <li><strong>OpenCV Entegrasyonu:</strong> İleri seviye görüntü işleme teknolojisi</li>
+                        <li><strong>Otomatik Yüz Tespiti:</strong> Gerçek zamanlı face detection algoritması</li>
+                        <li><strong>Kimlik Doğrulama:</strong> Güvenli giriş için biometrik doğrulama</li>
+                        <li><strong>Sınav Güvenliği:</strong> Online sınavlarda kimlik kontrolü</li>
+                        <li><strong>Yoklama Otomasyonu:</strong> Canlı derslerde otomatik attendance</li>
+                        <li><strong>Anti-Spoofing:</strong> Sahte yüz ve fotoğraf tespiti</li>
+                        <li><strong>Liveness Detection:</strong> Gerçek kişi varlığını doğrulama</li>
+                        <li><strong>Güvenlik Katmanı:</strong> Unauthorized erişim önleme sistemi</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3><div class="feature-icon"><i class="fas fa-comments"></i></div>İletişim ve Bildirim Sistemi</h3>
+                    <ul class="feature-list">
+                        <li><strong>Real-time Messaging:</strong> Socket.io ile anlık mesajlaşma</li>
+                        <li><strong>Dosya Paylaşımı:</strong> Çoklu format dosya transfer sistemi</li>
+                        <li><strong>Push Notification:</strong> Mobil ve web push bildirimleri</li>
+                        <li><strong>Grup Mesajlaşması:</strong> Sınıf bazlı toplu iletişim</li>
+                        <li><strong>Özel Mesajlar:</strong> Öğrenci-öğretmen birebir iletişim</li>
+                        <li><strong>Mesaj Geçmişi:</strong> Konuşmaların kalıcı olarak saklanması</li>
+                        <li><strong>Email Entegrasyonu:</strong> Otomatik email bildirimleri</li>
+                        <li><strong>Announcement System:</strong> Sistem çapında duyuru sistemi</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3><div class="feature-icon"><i class="fas fa-link"></i></div>Management Sistemi Entegrasyonu</h3>
+                    <ul class="feature-list">
+                        <li><strong>Seamless Navigation:</strong> LMS'den Management'a tek tıkla geçiş butonu</li>
+                        <li><strong>Shared Database:</strong> Ortak MySQL veritabanı kullanımı</li>
+                        <li><strong>Synchronized Login:</strong> Tek oturum açma (SSO) sistemi</li>
+                        <li><strong>Cross-Platform Data:</strong> İki platform arası veri senkronizasyonu</li>
+                        <li><strong>Unified User Experience:</strong> Tutarlı kullanıcı deneyimi</li>
+                        <li><strong>Project Integration:</strong> LMS projelerinin Management'da takibi</li>
+                        <li><strong>Resource Sharing:</strong> Dosya ve kaynakların iki platform arası paylaşımı</li>
+                        <li><strong>Centralized Analytics:</strong> Birleşik analiz ve raporlama sistemi</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3><div class="feature-icon"><i class="fas fa-users"></i></div>Takım Çalışması Detayları</h3>
+                    <ul class="feature-list">
+                        <li><strong>ArVis Teknoloji Projesi:</strong> Şirket bünyesinde geliştirilen kurumsal LMS</li>
+                        <li><strong>Agile Development:</strong> Scrum metodolojisi ile takım çalışması</li>
+                        <li><strong>Code Review Process:</strong> Peer review ve kalite kontrol süreci</li>
+                        <li><strong>Version Control:</strong> Git ile işbirlikçi kod geliştirme</li>
+                        <li><strong>Testing Strategy:</strong> Unit ve integration test süreçleri</li>
+                        <li><strong>Documentation:</strong> Kapsamlı teknik dokümantasyon</li>
+                        <li><strong>CI/CD Pipeline:</strong> Otomatik deployment süreçleri</li>
+                        <li><strong>Knowledge Sharing:</strong> Takım içi bilgi paylaşımı ve mentoring</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Rocket Akademi Yönetim Sistemi Detail -->
+    <div id="management-detail" class="project-detail">
+        <div class="detail-nav">
+            <div class="detail-nav-container">
+                <a href="#" onclick="closeProjectDetail()" class="detail-back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Projelere Dön
+                </a>
+                <div class="detail-title-nav">Rocket Akademi</div>
+            </div>
+        </div>
+        
+        <div class="detail-header">
+            <div class="detail-content">
+                <h1 class="detail-title">Rocket Akademi Yönetim Sistemi</h1>
+                <p class="detail-subtitle">Kapsamlı Şirket ve Proje Yönetim Platformu</p>
+                <div class="detail-tech-tags">
+                    <span class="detail-tech-tag">Node.js</span>
+                    <span class="detail-tech-tag">Gemini AI</span>
+                    <span class="detail-tech-tag">MySQL</span>
+                    <span class="detail-tech-tag">Python</span>
+                    <span class="detail-tech-tag">OpenCV</span>
+                    <span class="detail-tech-tag">Socket.io</span>
+                    <span class="detail-tech-tag">Jitsi Meet</span>
+                    <span class="detail-tech-tag">EJS</span>
+                    <span class="detail-tech-tag">HBS</span>
+                    <span class="detail-tech-tag">Bootstrap</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-body">
+            <div class="detail-body-container">
+                <div class="images-section">
+                    <h2 class="section-title">Sistem Modülleri</h2>
+                    <div class="images-grid">
+                        <div class="image-card" onclick="openImageModal('projectimages/ManagementSistem/Admin-Panel-Anasayfa.png')">
+                            <img src="projectimages/ManagementSistem/Admin-Panel-Anasayfa.png" alt="Admin Dashboard">
+                            <div class="image-caption">
+                                <h4>Yönetim Dashboard</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/ManagementSistem/Chat-Server-Anasayfası.png')">
+                            <img src="projectimages/ManagementSistem/Chat-Server-Anasayfası.png" alt="Chat System">
+                            <div class="image-caption">
+                                <h4>Chat Server Ana Sayfa</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/ManagementSistem/Chat-Server-Sohbit.png')">
+                            <img src="projectimages/ManagementSistem/Chat-Server-Sohbit.png" alt="Chat Interface">
+                            <div class="image-caption">
+                                <h4>Gerçek Zamanlı Sohbet</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/ManagementSistem/Canlı-Toplantı.png')">
+                            <img src="projectimages/ManagementSistem/Canlı-Toplantı.png" alt="Video Conference">
+                            <div class="image-caption">
+                                <h4>Video Konferans Sistemi</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/ManagementSistem/İş-Panosu.png')">
+                            <img src="projectimages/ManagementSistem/İş-Panosu.png" alt="Task Dashboard">
+                            <div class="image-caption">
+                                <h4>İş Takip Panosu</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/ManagementSistem/Takvim.png')">
+                            <img src="projectimages/ManagementSistem/Takvim.png" alt="Calendar">
+                            <div class="image-caption">
+                                <h4>Etkinlik Takvimi</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/ManagementSistem/Öğrenci-Panel-CV-oluşturma.png')">
+                            <img src="projectimages/ManagementSistem/Öğrenci-Panel-CV-oluşturma.png" alt="CV Builder">
+                            <div class="image-caption">
+                                <h4>CV Oluşturma Sistemi</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/ManagementSistem/Admin-Panel-Müşterileri-Projeleri-listesi.png')">
+                            <img src="projectimages/ManagementSistem/Admin-Panel-Müşterileri-Projeleri-listesi.png" alt="Client Projects">
+                            <div class="image-caption">
+                                <h4>Müşteri Proje Yönetimi</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features-section">
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-robot"></i></div>AI Chatbot Sistemi</h3>
+                        <ul class="feature-list">
+                            <li><strong>Gemini AI Integration:</strong> Google'ın gelişmiş AI modeli</li>
+                            <li><strong>Natural Language:</strong> Doğal dil işleme desteği</li>
+                            <li><strong>Context Awareness:</strong> Bağlamsal anlayış</li>
+                            <li><strong>Multi-language:</strong> Çoklu dil desteği</li>
+                            <li><strong>Smart Responses:</strong> Akıllı cevap sistemi</li>
+                            <li><strong>Learning Capability:</strong> Öğrenme ve adaptasyon</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-project-diagram"></i></div>Proje Yönetimi</h3>
+                        <ul class="feature-list">
+                            <li><strong>Project Planning:</strong> Detaylı proje planlama</li>
+                            <li><strong>Task Assignment:</strong> Görev dağıtım sistemi</li>
+                            <li><strong>Timeline Tracking:</strong> Zaman çizelgesi takibi</li>
+                            <li><strong>Resource Management:</strong> Kaynak yönetimi</li>
+                            <li><strong>Progress Monitoring:</strong> İlerleme takibi</li>
+                            <li><strong>Client Communication:</strong> Müşteri iletişimi</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-file-alt"></i></div>CV Oluşturma Sistemi</h3>
+                        <ul class="feature-list">
+                            <li><strong>Template Library:</strong> Profesyonel CV şablonları</li>
+                            <li><strong>Dynamic Forms:</strong> Dinamik form sistemi</li>
+                            <li><strong>PDF Export:</strong> PDF formatında dışa aktarma</li>
+                            <li><strong>Real-time Preview:</strong> Anlık önizleme</li>
+                            <li><strong>Custom Styling:</strong> Özelleştirilebilir tasarım</li>
+                            <li><strong>Version Control:</strong> CV versiyon yönetimi</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-calendar-alt"></i></div>Takvim ve Planlama</h3>
+                        <ul class="feature-list">
+                            <li><strong>Event Management:</strong> Etkinlik yönetimi</li>
+                            <li><strong>Scheduling System:</strong> Randevu planlama</li>
+                            <li><strong>Reminder Notifications:</strong> Hatırlatma bildirimleri</li>
+                            <li><strong>Team Calendar:</strong> Takım takvimi</li>
+                            <li><strong>Meeting Integration:</strong> Toplantı entegrasyonu</li>
+                            <li><strong>Deadline Tracking:</strong> Son tarih takibi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Plaka Tanıma Sistemi Detail -->
+    <div id="plaka-detail" class="project-detail">
+        <div class="detail-nav">
+            <div class="detail-nav-container">
+                <a href="#" onclick="closeProjectDetail()" class="detail-back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Projelere Dön
+                </a>
+                <div class="detail-title-nav">Plaka Tanıma Sistemi</div>
+            </div>
+        </div>
+        
+        <div class="detail-header">
+            <div class="detail-content">
+                <h1 class="detail-title">Akıllı Plaka Tanıma Sistemi</h1>
+                <p class="detail-subtitle">YOLOv5 ve Computer Vision ile Gelişmiş Tanıma Sistemi</p>
+                <div class="detail-tech-tags">
+                    <span class="detail-tech-tag">Python</span>
+                    <span class="detail-tech-tag">YOLOv5</span>
+                    <span class="detail-tech-tag">OpenCV</span>
+                    <span class="detail-tech-tag">Node.js</span>
+                    <span class="detail-tech-tag">MySQL</span>
+                    <span class="detail-tech-tag">EJS</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-body">
+            <div class="detail-body-container">
+                <div class="images-section">
+                    <h2 class="section-title">Sistem Görselleri</h2>
+                    <div class="images-grid">
+                        <div class="image-card" onclick="openImageModal('projectimages/plaka/Anasyfa.png')">
+                            <img src="projectimages/plaka/Anasyfa.png" alt="Ana Sayfa">
+                            <div class="image-caption">
+                                <h4>Sistem Ana Sayfası</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/plaka/Giren-Araçlar-Sayfası.png')">
+                            <img src="projectimages/plaka/Giren-Araçlar-Sayfası.png" alt="Araç Takibi">
+                            <div class="image-caption">
+                                <h4>Araç Giriş Takibi</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/plaka/Plakalar-Listesi-Sayfası.png')">
+                            <img src="projectimages/plaka/Plakalar-Listesi-Sayfası.png" alt="Plaka Listesi">
+                            <div class="image-caption">
+                                <h4>Tanınan Plakalar</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/plaka/Yolov5-Mimarisi.png')">
+                            <img src="projectimages/plaka/Yolov5-Mimarisi.png" alt="YOLOv5 Architecture">
+                            <div class="image-caption">
+                                <h4>YOLOv5 Algoritma Mimarisi</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/plaka/Araç-plaka-sisteminin-blok-diyagramı.png')">
+                            <img src="projectimages/plaka/Araç-plaka-sisteminin-blok-diyagramı.png" alt="System Diagram">
+                            <div class="image-caption">
+                                <h4>Sistem Blok Diyagramı</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/plaka/Genel-olarak-plaka-tanıma-sistemleri-üç-önemli-aşamada-oluşmaktadır.png')">
+                            <img src="projectimages/plaka/Genel-olarak-plaka-tanıma-sistemleri-üç-önemli-aşamada-oluşmaktadır.png" alt="Process Steps">
+                            <div class="image-caption">
+                                <h4>Tanıma Süreci Aşamaları</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features-section">
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-brain"></i></div>YOLOv5 Algoritması</h3>
+                        <ul class="feature-list">
+                            <li><strong>Real-time Detection:</strong> Gerçek zamanlı nesne tespiti</li>
+                            <li><strong>High Accuracy:</strong> %95+ doğruluk oranı</li>
+                            <li><strong>Fast Processing:</strong> Milisaniye düzeyinde işlem</li>
+                            <li><strong>Multi-scale Detection:</strong> Farklı boyutlarda tespit</li>
+                            <li><strong>Robust Performance:</strong> Değişken koşullarda çalışma</li>
+                            <li><strong>GPU Acceleration:</strong> CUDA desteği ile hızlandırma</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-eye"></i></div>Görüntü İşleme</h3>
+                        <ul class="feature-list">
+                            <li><strong>OpenCV Integration:</strong> Gelişmiş görüntü işleme</li>
+                            <li><strong>Image Preprocessing:</strong> Ön işleme algoritmaları</li>
+                            <li><strong>Noise Reduction:</strong> Gürültü azaltma</li>
+                            <li><strong>Edge Detection:</strong> Kenar tespit algoritması</li>
+                            <li><strong>Character Recognition:</strong> OCR karakter tanıma</li>
+                            <li><strong>Quality Enhancement:</strong> Görüntü kalite artırma</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-server"></i></div>Backend Sistemi</h3>
+                        <ul class="feature-list">
+                            <li><strong>Node.js API:</strong> RESTful servis mimarisi</li>
+                            <li><strong>MySQL Database:</strong> İlişkisel veritabanı yönetimi</li>
+                            <li><strong>Real-time Updates:</strong> Anlık veri güncelleme</li>
+                            <li><strong>Data Analytics:</strong> Veri analizi ve raporlama</li>
+                            <li><strong>Security Layer:</strong> Güvenlik katmanı</li>
+                            <li><strong>API Documentation:</strong> Detaylı API dökümanı</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-chart-line"></i></div>Sistem Performansı</h3>
+                        <ul class="feature-list">
+                            <li><strong>Processing Speed:</strong> <100ms yanıt süresi</li>
+                            <li><strong>Accuracy Rate:</strong> %95+ başarı oranı</li>
+                            <li><strong>Concurrent Users:</strong> Çoklu kullanıcı desteği</li>
+                            <li><strong>System Monitoring:</strong> Sistem performans takibi</li>
+                            <li><strong>Error Handling:</strong> Kapsamlı hata yönetimi</li>
+                            <li><strong>Scalability:</strong> Ölçeklenebilir mimari</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TEKNOFEST Detail -->
+    <div id="teknofest-detail" class="project-detail">
+        <div class="detail-nav">
+            <div class="detail-nav-container">
+                <a href="#" onclick="closeProjectDetail()" class="detail-back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Projelere Dön
+                </a>
+                <div class="detail-title-nav">TEKNOFEST Projesi</div>
+            </div>
+        </div>
+        
+        <div class="detail-header">
+            <div class="detail-content">
+                <h1 class="detail-title">TEKNOFEST Ulaşımda Yapay Zeka</h1>
+                <p class="detail-subtitle">Drone Görüntülerinde Nesne Tespiti ve Navigasyon Sistemi</p>
+                <div class="detail-tech-tags">
+                    <span class="detail-tech-tag">Python</span>
+                    <span class="detail-tech-tag">YOLOv9</span>
+                    <span class="detail-tech-tag">Visual SLAM</span>
+                    <span class="detail-tech-tag">OpenCV</span>
+                    <span class="detail-tech-tag">Deep Learning</span>
+                    <span class="detail-tech-tag">Computer Vision</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-body">
+            <div class="detail-body-container">
+                <div class="images-section">
+                    <h2 class="section-title">Proje Dokümantasyonu</h2>
+                    <div class="images-grid">
+                        <div class="image-card" onclick="openImageModal('projectimages/teknofest/TeknoFest.png')">
+                            <img src="projectimages/teknofest/TeknoFest.png" alt="TEKNOFEST">
+                            <div class="image-caption">
+                                <h4>TEKNOFEST Yarışması</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/teknofest/AKIŞ-ŞEMASI.png')">
+                            <img src="projectimages/teknofest/AKIŞ-ŞEMASI.png" alt="Flow Chart">
+                            <div class="image-caption">
+                                <h4>Sistem Akış Şeması</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/teknofest/Proje-Takvimi.png')">
+                            <img src="projectimages/teknofest/Proje-Takvimi.png" alt="Timeline">
+                            <div class="image-caption">
+                                <h4>Proje Geliştirme Takvimi</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/teknofest/Visual-Slam-Örneği.png')">
+                            <img src="projectimages/teknofest/Visual-Slam-Örneği.png" alt="Visual SLAM">
+                            <div class="image-caption">
+                                <h4>Visual SLAM Uygulaması</h4>
+                            </div>
+                        </div>
+                        <div class="image-card" onclick="openImageModal('projectimages/teknofest/YOLO-sürümleri-tespit-grafiği.png')">
+                            <img src="projectimages/teknofest/YOLO-sürümleri-tespit-grafiği.png" alt="YOLO Versions">
+                            <div class="image-caption">
+                                <h4>YOLO Sürümleri Karşılaştırması</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features-section">
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-drone"></i></div>Drone Görüntü İşleme</h3>
+                        <ul class="feature-list">
+                            <li><strong>Aerial Vision:</strong> Havacılık görüntü işleme</li>
+                            <li><strong>Object Detection:</strong> Çoklu nesne tespiti</li>
+                            <li><strong>Real-time Analysis:</strong> Gerçek zamanlı analiz</li>
+                            <li><strong>Stabilization:</strong> Görüntü sabitleme</li>
+                            <li><strong>Multi-perspective:</strong> Çoklu açı işleme</li>
+                            <li><strong>Weather Adaptation:</strong> Hava koşullarına uyum</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-map-marked"></i></div>Visual SLAM Sistemi</h3>
+                        <ul class="feature-list">
+                            <li><strong>Simultaneous Localization:</strong> Eş zamanlı konum belirleme</li>
+                            <li><strong>3D Mapping:</strong> Üç boyutlu haritalama</li>
+                            <li><strong>Feature Extraction:</strong> Özellik çıkarımı</li>
+                            <li><strong>Loop Closure:</strong> Döngü tespiti</li>
+                            <li><strong>Trajectory Planning:</strong> Yörünge planlama</li>
+                            <li><strong>Navigation Support:</strong> Navigasyon desteği</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-bullseye"></i></div>YOLOv9 Algoritması</h3>
+                        <ul class="feature-list">
+                            <li><strong>State-of-the-art:</strong> En güncel tespit algoritması</li>
+                            <li><strong>High Precision:</strong> Yüksek hassasiyet</li>
+                            <li><strong>Multi-class Detection:</strong> Çoklu sınıf tespiti</li>
+                            <li><strong>Optimized Speed:</strong> Optimize edilmiş hız</li>
+                            <li><strong>Small Object Detection:</strong> Küçük nesne tespiti</li>
+                            <li><strong>Custom Training:</strong> Özel model eğitimi</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3><div class="feature-icon"><i class="fas fa-trophy"></i></div>Yarışma Hedefleri</h3>
+                        <ul class="feature-list">
+                            <li><strong>UAP/UAİ Detection:</strong> İniş alanı tespiti</li>
+                            <li><strong>Safe Landing:</strong> Güvenli iniş kontrolü</li>
+                            <li><strong>Obstacle Avoidance:</strong> Engel kaçınma</li>
+                            <li><strong>Mission Planning:</strong> Görev planlama</li>
+                            <li><strong>Autonomous Flight:</strong> Otonom uçuş</li>
+                            <li><strong>Competition Success:</strong> Yarışma başarısı</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal">
+        <div class="image-modal-close" onclick="closeImageModal()">&times;</div>
+        <img id="fullImage" src="" alt="">
+    </div>
+
+    <script>
+        // Navigation Functions
+        function goToHome(section = '') {
+            window.location.href = '/' + section;
+        }
+
+        // Project Detail Functions
+        function openProjectDetail(projectId) {
+            // Hide main projects page
+            document.getElementById('projects-main').style.display = 'none';
+            
+            // Show specific project detail
+            const detailElement = document.getElementById(projectId + '-detail');
+            if (detailElement) {
+                detailElement.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+                
+                // Update URL hash
+                window.location.hash = projectId;
+            }
+        }
+
+        function closeProjectDetail() {
+            // Hide all project details
+            document.querySelectorAll('.project-detail').forEach(detail => {
+                detail.classList.remove('active');
+            });
+            
+            // Show main projects page
+            document.getElementById('projects-main').style.display = 'block';
+            document.body.style.overflow = 'auto';
+            
+            // Remove hash from URL
+            history.pushState("", document.title, window.location.pathname + window.location.search);
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Image Modal Functions
+        function openImageModal(imageSrc) {
+            const imageModal = document.getElementById('imageModal');
+            const fullImage = document.getElementById('fullImage');
+            fullImage.src = imageSrc;
+            imageModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeImageModal() {
+            const imageModal = document.getElementById('imageModal');
+            imageModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Check URL hash on page load
+        window.addEventListener('load', () => {
+            const hash = window.location.hash.substring(1);
+            if (hash && document.getElementById(hash + '-detail')) {
+                openProjectDetail(hash);
+            }
+            
+            // Initialize loading animations
+            setTimeout(() => {
+                document.querySelectorAll('.loading').forEach(element => {
+                    element.classList.add('visible');
+                });
+            }, 100);
+        });
+
+        // Handle browser back button
+        window.addEventListener('popstate', () => {
+            const hash = window.location.hash.substring(1);
+            if (!hash) {
+                closeProjectDetail();
+            }
+        });
+
+        // Close modals with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                // Close image modal
+                const imageModal = document.getElementById('imageModal');
+                if (imageModal.classList.contains('active')) {
+                    closeImageModal();
+                }
+                
+                // Close project detail
+                const activeDetail = document.querySelector('.project-detail.active');
+                if (activeDetail) {
+                    closeProjectDetail();
+                }
+            }
+        });
+
+        // Close image modal when clicking outside
+        document.getElementById('imageModal').addEventListener('click', (e) => {
+            if (e.target.id === 'imageModal') {
+                closeImageModal();
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe project cards for staggered animation
+        document.querySelectorAll('.project-card').forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+            observer.observe(card);
+        });
+
+        // Parallax effect for floating shapes
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const shapes = document.querySelectorAll('.shape');
+            
+            shapes.forEach((shape, index) => {
+                const speed = (index + 1) * 0.3;
+                shape.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Enhanced navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'var(--glass-dark)';
+                navbar.style.backdropFilter = 'blur(25px)';
+            } else {
+                navbar.style.background = 'var(--glass)';
+                navbar.style.backdropFilter = 'blur(20px)';
+            }
+        });
+
+        // Project card hover effects
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-15px) scale(1.02)';
+                this.style.boxShadow = 'var(--shadow-xl)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+                this.style.boxShadow = 'var(--shadow-lg)';
+            });
+        });
+
+        // Image card hover effects
+        document.querySelectorAll('.image-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.03)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Feature card animations
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = 'var(--shadow-xl)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'var(--shadow-lg)';
+            });
+        });
+
+        // Tech tag hover effects
+        document.querySelectorAll('.tech-tag').forEach(tag => {
+            tag.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px) scale(1.05)';
+                this.style.boxShadow = 'var(--shadow-md)';
+            });
+            
+            tag.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+                this.style.boxShadow = 'var(--shadow-sm)';
+            });
+        });
+
+        // Button shine effect
+        document.querySelectorAll('.project-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const rect = this.getBoundingClientRect();
+                const ripple = document.createElement('span');
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.classList.add('ripple');
+                
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Add ripple effect CSS
+        const style = document.createElement('style');
+        style.textContent = `
+            .project-button {
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .ripple {
+                position: absolute;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.3);
+                transform: scale(0);
+                animation: ripple-animation 0.6s linear;
+                pointer-events: none;
+            }
+            
+            @keyframes ripple-animation {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Progressive image loading
+        function loadImage(img) {
+            return new Promise((resolve, reject) => {
+                const image = new Image();
+                image.onload = () => resolve(image);
+                image.onerror = reject;
+                image.src = img.src;
+            });
+        }
+
+        // Lazy load images
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    loadImage(img).then(() => {
+                        img.style.opacity = '1';
+                        img.style.filter = 'none';
+                    }).catch(() => {
+                        img.style.display = 'none';
+                    });
+                    imageObserver.unobserve(img);
+                }
+            });
+        });
+
+        // Observe all images for lazy loading
+        document.querySelectorAll('img').forEach(img => {
+            img.style.opacity = '0';
+            img.style.filter = 'blur(5px)';
+            img.style.transition = 'opacity 0.3s ease, filter 0.3s ease';
+            imageObserver.observe(img);
+        });
+
+        // Performance monitoring
+        window.addEventListener('load', () => {
+            const loadTime = performance.now();
+            console.log(`Page loaded in ${loadTime.toFixed(2)}ms`);
+        });
+
+        // Error handling for missing images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('error', function() {
+                this.parentElement.style.display = 'none';
+                console.warn(`Failed to load image: ${this.src}`);
+            });
+        });
+
+        // Add loading states for project details
+        function showLoadingState(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.style.opacity = '0.7';
+                element.style.pointerEvents = 'none';
+            }
+        }
+
+        function hideLoadingState(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.style.opacity = '1';
+                element.style.pointerEvents = 'auto';
+            }
+        }
+
+        // Optimize scroll performance
+        let ticking = false;
+
+        function updateScrollEffects() {
+            // Update navbar
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'var(--glass-dark)';
+            } else {
+                navbar.style.background = 'var(--glass)';
+            }
+
+            // Update parallax shapes
+            const scrolled = window.pageYOffset;
+            const shapes = document.querySelectorAll('.shape');
+            
+            shapes.forEach((shape, index) => {
+                const speed = (index + 1) * 0.3;
+                shape.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+
+            ticking = false;
+        }
+
+        function requestScrollUpdate() {
+            if (!ticking) {
+                requestAnimationFrame(updateScrollEffects);
+                ticking = true;
+            }
+        }
+
+        window.addEventListener('scroll', requestScrollUpdate);
+
+        // Add accessibility improvements
+        document.querySelectorAll('.project-card, .image-card').forEach(card => {
+            card.setAttribute('tabindex', '0');
+            card.setAttribute('role', 'button');
+            
+            card.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    card.click();
+                }
+            });
+        });
+
+        // Add focus management for modals
+        function trapFocus(element) {
+            const focusableElements = element.querySelectorAll(
+                'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+            );
+            const firstElement = focusableElements[0];
+            const lastElement = focusableElements[focusableElements.length - 1];
+
+            element.addEventListener('keydown', (e) => {
+                if (e.key === 'Tab') {
+                    if (e.shiftKey) {
+                        if (document.activeElement === firstElement) {
+                            e.preventDefault();
+                            lastElement.focus();
+                        }
+                    } else {
+                        if (document.activeElement === lastElement) {
+                            e.preventDefault();
+                            firstElement.focus();
+                        }
+                    }
+                }
+            });
+
+            firstElement?.focus();
+        }
+
+        // Apply focus trap when opening project details
+        document.querySelectorAll('.project-detail').forEach(detail => {
+            const observer = new MutationObserver((mutations) => {
+                mutations.forEach((mutation) => {
+                    if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                        if (detail.classList.contains('active')) {
+                            trapFocus(detail);
+                        }
+                    }
+                });
+            });
+            observer.observe(detail, { attributes: true });
+        });
+
+        // Console welcome message
+        console.log(`
+        🚀 Hilal Aydın - Portfolio Website
+        =====================================
+        Modern, responsive and interactive portfolio
+        Built with: HTML5, CSS3, JavaScript
+        Features: Smooth animations, lazy loading, accessibility
+        
+        Contact: hiilaallaydin.14@gmail.com
+        `);
+    </script>
+</body>
+</html>
